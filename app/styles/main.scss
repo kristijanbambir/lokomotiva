@@ -8,7 +8,7 @@ $color-grey: #dbdbdb;
 $color-light: #fefffd;
 
 body {
-    // background: $color-dark-blue;
+    background: $color-dark-blue;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -44,9 +44,9 @@ h4.news-title {
 }
 
 .header {
-    // background-image: url(../images/header_bg.png);
-    // background-size: auto 102px;
-    // height: 102px;
+    background-image: url(../images/header_bg.png);
+    background-size: auto 102px;
+    height: 102px;
     margin-top: 10px;
     width: 100%;
 
@@ -127,21 +127,20 @@ h4.news-title {
 
 @media (min-width: 768px) {
     .header {
-        // background-image: url(../images/header_bg.png);
-        // background-size: auto 204px;
-        // height: 204px;
+        background-image: url(../images/header_bg.png);
+        background-size: auto 204px;
+        height: 204px;
 
         #logo {
-            height: 150px;
-            width: 106px;
+            height: 204px;
+            width: 148px;
+            margin-right: 10px;
         }
 
         #title {
-            color: $color-dark-blue;
-            font-weight: 400;
             font-size: 40px;
             text-transform: uppercase;
-            margin: 0 0 0 40px;
+            margin: 40px 0 0 10px;
         }
     }
 
