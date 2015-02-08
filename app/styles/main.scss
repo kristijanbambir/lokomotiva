@@ -1,0 +1,161 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$color-dark-blue: #001D3F;
+$color-grey: #dbdbdb;
+$color-light: #fefffd;
+
+body {
+    // background: $color-dark-blue;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.footer {
+    margin: 20px 0;
+    color: $color-grey;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+h2.title {
+    border-bottom: 1px solid $color-grey;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h4.news-title {
+    margin-top: 0;
+}
+
+.header {
+    // background-image: url(../images/header_bg.png);
+    // background-size: auto 102px;
+    // height: 102px;
+    margin-top: 10px;
+    width: 100%;
+
+    #logo {
+        float: left;
+        height: 102px;
+        width: 74px;
+    }
+
+    #title {
+        color: $color-light;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0 0 0;
+    }
+}
+
+.navbar.navbar-default {
+    background: none;
+    border: none;
+    margin-top: -34px;
+
+    .navbar-nav > li {
+        a {
+            background: none;
+            color: $color-light;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            &:hover {
+                background: none;
+                color: $color-light;
+            }
+        }
+
+        &.active > a {
+            font-weight: 700;
+        }
+    }
+
+    .navbar-toggle {
+        border: none;
+        padding: 4px 5px;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-light;
+        }
+    }
+}
+
+.news-article {
+    margin-bottom: 20px;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.well {
+    background-color: $color-light;
+}
+
+@media (min-width: 768px) {
+    .header {
+        // background-image: url(../images/header_bg.png);
+        // background-size: auto 204px;
+        // height: 204px;
+
+        #logo {
+            height: 150px;
+            width: 106px;
+        }
+
+        #title {
+            color: $color-dark-blue;
+            font-weight: 400;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin: 0 0 0 40px;
+        }
+    }
+
+    .navbar.navbar-default {
+        margin-top: -56px;
+
+        .navbar-nav > li {
+            a {
+                color: $color-dark-blue;
+
+                &:hover {
+                    color: $color-dark-blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Mačevalački klub Lokomotiva</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header">
+        <div class="container">
+            <!-- <div class="text-center"> -->
+                <img id="logo" src="images/grb.svg" alt>
+                <h1 id="title">Mačevalački klub<br>Lokomotiva</h1>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div>
+        <img src="images/art.jpg" alt>
+    </div>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!-- <span>Izbornik</span> -->
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-main">
+                    <ul class="nav navbar-nav">
+                        <li role="presentation" class="active">
+                            <a href="#home" role="tab" data-toggle="tab">Početna</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#calendar" role="tab" data-toggle="tab">Kalendar</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#members" role="tab" data-toggle="tab">Članovi</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#sponsors" role="tab" data-toggle="tab">Za sponzore</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="row well" id="news-section">
+                    <div class="col-md-12">
+                        <h2 class="title">Obavijesti</h2>
+                    </div>
+                    <div id="news-items">
+                        <script id="news-template" type="x-tmpl-mustache">
+                            <div class="col-md-{{ columnSpan }} news-article">
+                                <a href="{{ url }}">
+                                    <h4 class="news-title">{{ regular-title }}</h4>
+                                </a>
+                                <p class="text-muted">{{ dateLocal }}</p>
+                                <p class="news-body">{{{ regular-body }}}</p>
+                            </div>
+                        </script>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-right"><a href="http://macevanje-lokomotiva-test.tumblr.com">Sve obavijesti</a></p>
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="title">O klubu</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Phasellus laoreet lorem vel dolor tempus vehicula. Praeterea iter est quasdam res quas ex communi.
+                            Sed haec quis possit intrepidus aestimare tellus. Etiam habebis sem dicantur magna mollis euismod.
+                            Excepteur sint obcaecat cupiditat non proident culpa. Quisque ut dolor gravida, placerat libero vel,
+                            euismod. Quis aute iure reprehenderit in voluptate velit esse.
+                        </p>
+                        <p>
+                            Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Quae vero auctorem tractata ab fiducia
+                            dicuntur. Cum sociis natoque penatibus et magnis dis parturient. Contra legem facit qui id facit quod
+                            lex prohibet. Idque Caesaris facere voluntate liceret: sese habere. Qui ipsorum lingua Celtae, nostra
+                            Galli appellantur.
+                        </p>
+                        <p>
+                            <span class="lead">Treninzi</span>
+                            <br>
+                            Treninzi se održavaju svaki dan od 18.00 (djeca), od 19.30 (kadeti, juniori i seniori), uto/čet od 19.30
+                            (rekreacija)
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1745764464213!2d15.951707000000008!3d45.807762000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x48ce899f14403a53!2sDom+sportova!5e0!3m2!1shr!2shr!4v1416176968410" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="calendar">
+                <div class="row well">
+                    <div class="col-md-12">
+                        <h2 class="title">Događanja</h2>
+                        <div class="responsive-iframe-container hidden-xs">
+                            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=hr&amp;bgcolor=%23FFFFFF&amp;src=kristijan.bambir%40gmail.com&amp;color=%23182C57&amp;ctz=Europe%2FBelgrade" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                        <div class="responsive-iframe-container visible-xs-block">
+                            <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=hr&amp;bgcolor=%23FFFFFF&amp;src=kristijan.bambir%40gmail.com&amp;color=%23182C57&amp;ctz=Europe%2FBelgrade" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="members">
+                <div class="row well">
+                    <div class="col-md-12">
+                        <h2 class="title">Članovi</h2>
+                        <div class="text-center">
+                            <img src="images/clanovi.jpg" class="img-responsive" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="sponsors">
+                <div class="row well">
+                    <div class="col-md-12">
+                        <h2 class="title">Za sponzore</h2></h2></h2>
+                        <p>
+                            TODO
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p class="text-right">© 2014 Mačevalački klub Lokomotiva. Sva prava pridržana.</p>
+        </div>
+
+    </div>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
+    <script src="bower_components/jquery.dotdotdot/src/js/jquery.dotdotdot.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
