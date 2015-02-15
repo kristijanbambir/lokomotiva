@@ -8,13 +8,15 @@ $color-grey: #dbdbdb;
 $color-light: #fefffd;
 
 body {
-    background: $color-dark-blue;
+    // background: $color-dark-blue;
     font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
 }
 
 .footer {
-    margin: 20px 0;
-    color: $color-grey;
+    color: $color-dark-blue;
+    font-size: 12px;
+    margin: 0px 0 20px 0;
 }
 
 .google-maps {
@@ -43,31 +45,54 @@ h4.news-title {
     margin-top: 0;
 }
 
-.header {
-    background-image: url(../images/header_bg.png);
-    background-size: auto 102px;
-    height: 102px;
-    margin-top: 10px;
-    width: 100%;
+#header {
+    position: relative;
 
-    #logo {
+    #banner {
+        border: 12px solid white;
+        box-shadow: 0px 2px 6px #e4e4e4;
         float: left;
-        height: 102px;
-        width: 74px;
+        margin: 10px 0 20px 0;
     }
 
-    #title {
-        color: $color-light;
-        font-size: 20px;
-        font-weight: 300;
-        margin: 10px 0 0 0;
+    #header-top {
+        $grb-width: 100px;
+        $grb-margin: 40px;
+
+        #grb {
+            left: $grb-margin;
+            position: absolute;
+            top: 0;
+            width: $grb-width;
+            z-index: 1;
+        }
+
+        #title {
+            font-size: 20px;
+            margin: 0 0 0 ($grb-width + $grb-margin);
+            padding: 40px 0 30px 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#menu {
+    background: $color-dark-blue;
+
+    #menu-stripe-white {
+        background: white;
+        height: 2px;
+    }
+
+    #menu-stripe-blue {
+        height: 4px;
     }
 }
 
 .navbar.navbar-default {
     background: none;
     border: none;
-    margin-top: -34px;
+    margin-bottom: 0;
 
     .navbar-nav > li {
         a {
@@ -89,12 +114,12 @@ h4.news-title {
 
     .navbar-toggle {
         border: none;
-        padding: 4px 5px;
+        padding: 10px 5px;
 
         &:active,
         &:focus,
         &:hover {
-            background-color: $color-light;
+            background-color: $color-dark-blue;
         }
     }
 }
@@ -125,35 +150,33 @@ h4.news-title {
     background-color: $color-light;
 }
 
-@media (min-width: 768px) {
-    .header {
-        background-image: url(../images/header_bg.png);
-        background-size: auto 204px;
-        height: 204px;
-
-        #logo {
-            height: 204px;
-            width: 148px;
-            margin-right: 10px;
-        }
-
-        #title {
-            font-size: 40px;
-            text-transform: uppercase;
-            margin: 40px 0 0 10px;
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #header {
+        #header-top {
+            #title {
+                font-size: 28px;
+                padding: 30px 0 10px 0;
+            }
         }
     }
+}
 
-    .navbar.navbar-default {
-        margin-top: -56px;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #header {
+        #header-top {
+            $grb-width: 150px;
+            $grb-margin: 40px;
 
-        .navbar-nav > li {
-            a {
-                color: $color-dark-blue;
+            #grb {
+                left: $grb-margin;
+                width: $grb-width;
+            }
 
-                &:hover {
-                    color: $color-dark-blue;
-                }
+            #title {
+                font-size: 36px;
+                margin: 0 0 0 ($grb-width + $grb-margin);
             }
         }
     }
