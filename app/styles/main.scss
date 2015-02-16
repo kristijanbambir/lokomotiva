@@ -105,12 +105,17 @@ h4.news-title {
 
             &:hover {
                 background: none;
-                color: $color-light;
+                color: white;
             }
         }
 
         &.active > a {
             font-weight: 700;
+
+            &:focus {
+                background: none;
+                color: white;
+            }
         }
     }
 
