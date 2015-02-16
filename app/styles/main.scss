@@ -36,6 +36,7 @@ body {
 
 h2.title {
     border-bottom: 1px solid $color-grey;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -167,6 +168,10 @@ h4.news-title {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    h2.title {
+        font-size: 30px;
+    }
+
     #header {
         #header-top {
             #title {
