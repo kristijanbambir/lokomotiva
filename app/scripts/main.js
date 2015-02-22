@@ -33,3 +33,5 @@ $('.navbar a.navbar-link').click(function() {
         navbar_toggle.trigger('click');
     }
 });
+
+$('#current-year').html(new Date().getFullYear());
