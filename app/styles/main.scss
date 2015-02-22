@@ -73,6 +73,8 @@ h4.news-title {
             font-family: 'Molengo', sans-serif;
             font-size: 20px;
             margin: 0 0 0 ($grb-width + $grb-margin);
+            max-width: 150px;
+            min-height: 136px;
             padding: 40px 0 30px 0;
             text-transform: uppercase;
         }
@@ -174,8 +176,14 @@ h4.news-title {
 
     #header {
         #header-top {
+            #grb {
+                top: -56px;
+            }
+
             #title {
                 font-size: 28px;
+                max-width: 1000px;
+                min-height: 20px;
                 padding: 30px 0 10px 0;
             }
         }
