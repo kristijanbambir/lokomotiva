@@ -20,10 +20,11 @@ body {
 }
 
 #google-maps {
-    position: relative;
-    padding-bottom: 40%; // This is the aspect ratio
     height: 0;
+    margin-bottom: 10px;
     overflow: hidden;
+    position: relative;
+    padding-bottom: 70%; // This is the aspect ratio
 
     iframe {
         position: absolute;
@@ -41,10 +42,6 @@ h2.title {
     line-height: 40px;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-h4.news-title {
-    margin-top: 0;
 }
 
 #header {
@@ -141,10 +138,18 @@ h4.news-title {
 
 .news-article {
     margin-bottom: 20px;
+
+    .news-date {
+        font-size: 13px;
+    }
+
+    .news-title {
+        margin-top: 0;
+    }
 }
 
 #profile-trainer {
-    width: 150px;
+    width: 180px;
 }
 
 .responsive-iframe-container {

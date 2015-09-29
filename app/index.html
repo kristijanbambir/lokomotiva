@@ -28,6 +28,7 @@
     <div id="menu">
         <div class="container">
             <nav class="navbar navbar-default" role="navigation">
+                <!--
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
@@ -55,6 +56,7 @@
                         </ul>
                     </div>
                 </div>
+                -->
             </nav>
         </div>
 
@@ -116,6 +118,7 @@
                     <div class="col-md-12">
                         <div class="well">
                             <div class="row" id="news-section">
+                                <!--
                                 <div class="col-md-12">
                                     <h2 class="title">Obavijesti</h2>
                                 </div>
@@ -125,7 +128,7 @@
                                             <a href="{{ url }}">
                                                 <h4 class="news-title">{{ regular-title }}</h4>
                                             </a>
-                                            <p class="text-muted">{{ dateLocal }}</p>
+                                            <p class="news-date text-muted">{{ dateLocal }}</p>
                                             <p class="news-body">{{{ regular-body }}}</p>
                                         </div>
                                     </script>
@@ -133,56 +136,82 @@
                                 <div class="col-md-12">
                                     <p class="text-right"><a href="http://macevanje-lokomotiva-test.tumblr.com">Sve obavijesti</a></p>
                                 </div>
+                                -->
                                 <div class="col-md-6">
                                     <h2 class="title">Učlani se</h2>
                                     <p class="lead">
-                                        <strong>Učlaniti se može bilo tko i bilo kada!</strong><br>
-                                        Treninzi se održavaju svakim danom od 18.00 za djecu, od 19.30 za kadete, juniore i seniore,
-                                        te utorkom i četvrkom od 19.30 za rekreativce.
+                                        <strong>Učlaniti se može bilo tko bilo kada!</strong><br>
+                                        Treninzi se održavaju svakim radnim danom: ponedjeljkom, srijedom i petkom na Velesajmu te
+                                        utorkom i četvrtkom u Domu sportova.
                                     </p>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
-                                            <p>
-                                                <img id="profile-trainer" class="center-block img-responsive img-circle" src="images/martina1.jpg" alt>
-                                            </p>
-                                            <p class="text-center">
-                                                Martina Zmaić, trenerica
-                                            </p>
+                                            <div id="google-maps">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1745764464213!2d15.951707000000008!3d45.807762000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x48ce899f14403a53!2sDom+sportova!5e0!3m2!1shr!2shr!4v1416176968410" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                             <address>
-                                                <strong>Mačevalački klub Lokomotiva</strong><br>
-                                                Sportsko društvo Lokomotiva<br>
-                                                Crnatkova 18, Zagreb
-                                            </address>
-                                            <address>
-                                                Dvorana: Dom sportova,<br>
+                                                <strong>Dvorana:</strong> Dom sportova,<br>
                                                 Trg Krešimira Ćosića 11, Zagreb<br>
                                                 dvorana 5 - Srebrna dvorana
                                             </address>
+                                            <p>
+                                                <strong>Termini:</strong> utorkom i četvrtkom,
+                                                od 18.00 za djecu te od 19.30 za kadete, juniore, seniore i rekreativce
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div id="google-maps">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.555692152769!2d15.968995850000002!3d45.7800939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d67e5c6dd0c3%3A0x505d8ba1cef8e81!2sPav.+25%2C+10000%2C+Zagreb!5e0!3m2!1sen!2shr!4v1443536095726" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
                                             <address>
-                                                Kontakt osoba:<br>
-                                                <strong>Martina Zmaić</strong><br>
-                                                tel: +385 91 7870 786<br>
-                                                email: <a href="mailto:zmaic.martina@gmail.com">zmaic.martina@gmail.com</a>
+                                                <strong>Dvorana:</strong> Zagrebački Velesajam,<br>
+                                                Avenija Dubrovnik 15, Zagreb<br>
+                                                paviljon 25
                                             </address>
+                                            <p>
+                                                <strong>Termini:</strong> ponedjeljkom, srijedom i petkom,
+                                                od 17.30 za djecu do 11 godina, od 19.00 za djecu do 14 godina te od 20.30 za kadete, juniore, seniore i rekreativce
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h2 class="title">O klubu</h2>
                                     <p>
-                                        Phasellus laoreet lorem vel dolor tempus vehicula. Praeterea iter est quasdam res quas ex communi.
-                                        Sed haec quis possit intrepidus aestimare tellus. Etiam habebis sem dicantur magna mollis euismod.
-                                        Excepteur sint obcaecat cupiditat non proident culpa.
+                                        Mačevalački klub Lokomotiva osnovan je 29. rujna 1949. Član je sportskog društva Lokomotiva.
+                                        Danas broji dvadesetak članova. Treninzi se održavaju u Domu sportova i na Velesajmu.
+                                        Aktualna trenerica Martina Zmajić u klubu je od 2003. godine.
                                     </p>
+                                    <br>
                                     <p>
-                                        Quisque ut dolor gravida, placerat libero vel, euismod. Quis aute iure reprehenderit in voluptate
-                                        velit esse. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Quae vero auctorem
-                                        tractata ab fiducia dicuntur. Cum sociis natoque penatibus et magnis dis parturient.
+                                        <img id="profile-trainer" class="center-block img-responsive img-circle" src="images/martina1.jpg" alt>
                                     </p>
-                                    <div id="google-maps">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1745764464213!2d15.951707000000008!3d45.807762000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x48ce899f14403a53!2sDom+sportova!5e0!3m2!1shr!2shr!4v1416176968410" frameborder="0" style="border:0"></iframe>
+                                    <p class="text-center">
+                                        Martina Zmaić, trenerica
+                                    </p>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <address>
+                                                <strong>Mačevalački klub Lokomotiva</strong><br>
+                                                Sportsko društvo Lokomotiva<br>
+                                                Crnatkova 18, Zagreb
+                                            </address>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <address>
+                                                <strong>Martina Zmaić</strong><br>
+                                                tel: +385 91 7870 786<br>
+                                                email: <a href="mailto:zmaic.martina@gmail.com">zmaic.martina@gmail.com</a>
+                                            </address>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
