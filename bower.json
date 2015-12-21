@@ -2,11 +2,24 @@
   "name": "lokomotiva",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "3.3.1",
-    "font-awesome": "4.2.0",
-    "jquery.dotdotdot": null,
-    "moment": "2.8.4",
-    "moment-timezone": "0.2.5",
-    "mustache": "0.8.2"
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "~4.5.0",
+    "jQuery.dotdotdot": "jquery.dotdotdot#~1.7.4",
+    "moment": "~2.10.6",
+    "moment-timezone": "~0.4.1",
+    "mustache.js": "mustache#~2.2.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
   }
 }
