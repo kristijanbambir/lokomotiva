@@ -8,6 +8,21 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
+module.exports = function(grunt) {
+  grunt.initConfig({
+    surge: {
+      'my-project-name': {
+        options: {
+          project: 'dist/',
+          domain: 'my-project-name.surge.sh'
+        }
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-surge');
+};
+
 module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
@@ -363,9 +378,21 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    surge: {
+      'my-project-name': {
+        options: {
+          project: 'dist/',
+          domain: 'www.macevanje-lokomotiva.hr'
+        }
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-surge');
+
+  grunt.registerTask('deploy', ['surge']);
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
