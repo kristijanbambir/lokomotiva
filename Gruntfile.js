@@ -381,7 +381,7 @@ module.exports = function (grunt) {
     },
 
     surge: {
-      'my-project-name': {
+      'lokomotiva': {
         options: {
           project: 'dist/',
           domain: 'www.macevanje-lokomotiva.hr'
