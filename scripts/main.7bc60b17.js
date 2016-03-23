@@ -1,0 +1,1 @@
+"use strict";$(".navbar a.navbar-link").click(function(){var a=$(".navbar-toggle");a.is(":visible")&&a.trigger("click")}),$("#current-year").html((new Date).getFullYear());
